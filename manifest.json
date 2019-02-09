@@ -17,9 +17,7 @@
     "tabs"
   ],
   "browser_action": {
-  	"default_icon": "images/glasses.png",
-    "default_popup": "popup.html",
-    "default_title": "A popup will come here"
+  	"default_icon": "images/glasses.png"
   },
   "icons": {
 	  "16": "images/glasses.png",

@@ -18,17 +18,19 @@
 // 	}
 // }
 
-let zoom = document.getElementById('zoomText');
+// let zoom = document.getElementById('zoomText');
 
-zoom.onclick = zoomThatText;
+// zoom.onclick = zoomThatText;
 
-function zoomThatText() {
-	let paragraphs = document.getElementsByTagName('p');
-	for (elt of paragraphs) {
-		elt.style['font-size'] = '30px';
-		elt.style['line-height'] = '1.5';
-	}
-}
+// function zoomThatText() {
+// 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+// 		let paragraphs = document.getElementsByTagName('p');
+// 		for (elt of paragraphs) {
+// 			elt.style['font-size'] = '30px';
+// 			elt.style['line-height'] = '1.5';
+// 		}
+// 	});
+// }
 
 //chrome.runtime.onMessage.addListener(gotMessage);
 
@@ -36,9 +38,13 @@ function gotMessage(message, sender, sendResponse) {
 	console.log(message);
 	if (message.txt === "on") {
 		let paragraphs = document.getElementsByTagName('p');
+		let links = document.getElementsByTagName('a');
 		for (elt of paragraphs) {
 			elt.style['font-size'] = '30px';
 			elt.style['line-height'] = '1.5';
+		}
+		for (elt of links) {
+			elt.style['font-weight'] = 'bold';
 		}
 	}
 }
