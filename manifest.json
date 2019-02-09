@@ -17,13 +17,13 @@
     "tabs"
   ],
   "browser_action": {
-  	"default_icon": "images/glasses.png"
+  	"default_icon": "images/piggy.png"
   },
   "icons": {
-	  "16": "images/glasses.png",
-	  "32": "images/glasses.png",
-	  "48": "images/glasses.png",
-	  "128": "images/glasses.png"
+	  "16": "images/piggy.png",
+	  "32": "images/piggy.png",
+	  "48": "images/piggy.png",
+	  "128": "images/piggy.png"
 	},
   "manifest_version": 2
 }
